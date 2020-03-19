@@ -51,12 +51,12 @@
 
 **Spring Cloud 与  Dubbo** 
 
-![image](https://github.com/heydapao/springcloud/raw/master/img/springcloud-dubbo.png)
+![image](https://github.com/heydapao/springcloud/blob/master/img/springcloud-dubbo.png)
 
 
 **spring cloud 组件**
 
-![image](https://github.com/heydapao/springcloud/raw/master/img/springcloud-framework.png)
+![image](https://github.com/heydapao/springcloud/blob/master/img/springcloud-framework.png)
 
     服务治理：
     
