@@ -15,6 +15,7 @@
         <module>springcloud-monitor-12001</module>
         <module>springcloud-api</module>
         <module>springcloud-payment-13001</module>
+        <module>springcloud-payment-13002</module>
     </modules>
     <!--spring boot 项目申明-->
     <parent>
