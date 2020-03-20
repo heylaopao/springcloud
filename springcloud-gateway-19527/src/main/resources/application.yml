@@ -1,0 +1,46 @@
+server:
+  port: 19527
+spring:
+  application:
+    name: gateway-server
+  ##  网关配置 ###
+  cloud:
+    gateway:
+      ##  开启服务名转发 ##
+      discovery:
+        locator:
+          enabled: true
+      ## 路由 ##
+      routes:
+        - id: api-payment
+          uri: lb://PAYMENT-SERVER
+          predicates:
+            - Path=/payment/**
+        - id: api-order
+          uri: lb://ORDER-SERVER
+          predicates:
+            - Path=/order/**
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://local.eureka10001.com:10001/eureka/,http://local.eureka10002.com:10002/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+info:
+  createUser: 596767880@qq.com
+  gitee: https://gitee.com/heguangchuan
+
+
+
