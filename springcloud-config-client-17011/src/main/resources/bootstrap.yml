@@ -1,0 +1,20 @@
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://local.eureka10001.com:10001/eureka/,http://local.eureka10002.com:10002/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    ip-address: localhost
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      discovery:
+        ## 服务端的实例名称 ##
+        service-id: config-server
+        enabled: true
+      profile: dev
+      fail-fast: true
