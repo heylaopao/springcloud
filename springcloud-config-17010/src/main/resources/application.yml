@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: config-server
+    ###采取哪种配置方式##
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/heylaopao/cloud-server-config.git
+          search-paths: myconf-3
+          default-label: master
+          force-pull: true
+server:
+  port: 17010
+eureka:
+  client:
+    service-url:
+      defaultZone: http://local.eureka10001.com:10001/eureka/,http://local.eureka10002.com:10002/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    ip-address: localhost
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
