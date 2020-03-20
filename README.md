@@ -27,4 +27,20 @@
  
  #### 07-负载均衡
  https://github.com/heylaopao/springcloud/blob/master/07-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1.md
+ 
+ #### 08-熔断降级
+ https://github.com/heylaopao/springcloud/blob/master/08-%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7.md
+ 
+ #### 09-图形监控
+ 
+ dashboard , turbine 略
+ 
+ #### 10-Stream
+ 
+ 略
+ 
+ #### 11-链路追踪
+ 
+ 略
+ 
 
