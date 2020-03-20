@@ -13,6 +13,7 @@
         <module>springcloud-config-17010</module>
         <module>springcloud-config-client-17011</module>
         <module>springcloud-monitor-12001</module>
+        <module>springcloud-api</module>
     </modules>
     <!--spring boot 项目申明-->
     <parent>
