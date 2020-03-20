@@ -18,4 +18,7 @@
  
  #### 04-配置中心
  https://github.com/heylaopao/springcloud/blob/master/04-%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83.md
+ 
+ ####05-消息总线
+ https://github.com/heylaopao/springcloud/blob/master/05-%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF.md
 
