@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: zuul-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://local.eureka10001.com:10001/eureka/,http://local.eureka10002.com:10002/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+server:
+  port: 19528
+## 网关配置 ##
+zuul:
+  host:
+    connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
+    socket-timeout-millis: 60000   #socket超时
+  #### 不允许网关通过微服务的服务名进行访问 ##
+  ignored-services: '*'
+  sensitiveHeaders:
+  routes:
+    payment-server: /api-p/**
+    payment-ribbon: /api-r/**
+    order-server: /api-order/**
+    order-hystrix: /api-h/**
+  ribbon:
+    eager-load:
+      enabled: true
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
