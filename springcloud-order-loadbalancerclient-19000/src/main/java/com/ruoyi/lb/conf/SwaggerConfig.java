@@ -1,4 +1,4 @@
-package com.ruoyi.payment.conf;
+package com.ruoyi.lb.conf;
 
 import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import org.springframework.context.annotation.Bean;
@@ -24,15 +24,14 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.ruoyi.payment.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.ruoyi.lb.controller"))
                 .paths(PathSelectors.any())
                 .build();
-
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("支付中心文档")
+                .title("订单中心-loadBalancerClient")
                 .version("1.0")
                 .contact(new Contact("596767880@qq.com", "https://github.com/heylaopao/springcloud", "596767880@qq.com"))
                 .build();

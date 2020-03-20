@@ -1,0 +1,28 @@
+server:
+  port: 19000
+spring:
+  application:
+    name: order-server
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://local.eureka10001.com:10001/eureka/,http://local.eureka10002.com:10002/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+info:
+  createUser: 596767880@qq.com
+  gitee: https://github.com/heylaopao/springcloud
+
+
+
