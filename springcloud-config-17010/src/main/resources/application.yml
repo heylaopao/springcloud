@@ -1,4 +1,6 @@
 spring:
+  rabbitmq:
+    host: 192.168.198.129
   application:
     name: config-server
     ###采取哪种配置方式##

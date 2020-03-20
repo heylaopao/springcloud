@@ -11,6 +11,11 @@
     <packaging>jar</packaging>
     <artifactId>springcloud-config-17010</artifactId>
     <dependencies>
+        <!-- 消息总线 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
         <!-- 配置中心服务端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
