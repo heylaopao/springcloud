@@ -1,0 +1,23 @@
+server:
+  port: 12001
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://local.eureka10001.com:10001/eureka/,http://local.eureka10002.com:10002/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    ip-address: localhost
+spring:
+  application:
+    name: monitor-server
+## 暴露站点 ##
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
