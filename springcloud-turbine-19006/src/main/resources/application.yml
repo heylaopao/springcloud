@@ -1,0 +1,35 @@
+server:
+  port: 19006
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://local.eureka10001.com:10001/eureka/,http://local.eureka10002.com:10002/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+spring:
+  application:
+    name: hystrix-turbine
+
+## 暴露 endpoints ,除了 health 和 info 两个支持 web 访问外，其他的默认不支持 web 访问
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+## turbine 相关配置 ##
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config: order-server,pament-server
+  cluster-name-expression: new String("default")
+
+
+
+
+
+
