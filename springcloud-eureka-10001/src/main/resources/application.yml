@@ -1,0 +1,14 @@
+server:
+  port: 10001
+eureka:
+  instance:
+    ## 注册到注册中心的名称
+    hostname: local.eureka10001.com
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      ## 单机环境 ##
+      #defaultZone: http://localhost:10001/euraka
+      ## 集群环境 ##
+      defaultZone: http://local.eureka10002.com:10002/eureka/
