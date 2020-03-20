@@ -1,4 +1,4 @@
-package com.ruoyi.api;
+package com.ruoyi.api.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
