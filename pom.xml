@@ -17,6 +17,7 @@
         <module>springcloud-payment-13001</module>
         <module>springcloud-payment-13002</module>
         <module>springcloud-order-loadbalancerclient-19000</module>
+        <module>springcloud-order-ribbon-19001</module>
     </modules>
     <!--spring boot 项目申明-->
     <parent>
