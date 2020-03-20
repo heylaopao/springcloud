@@ -21,4 +21,7 @@
  
  #### 05-消息总线
  https://github.com/heylaopao/springcloud/blob/master/05-%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF.md
+ 
+ #### 06-监控中心
+ https://github.com/heylaopao/springcloud/blob/master/06-%E7%9B%91%E6%8E%A7%E4%B8%AD%E5%BF%83.md
 
