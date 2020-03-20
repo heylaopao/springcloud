@@ -20,6 +20,7 @@
         <module>springcloud-order-ribbon-19001</module>
         <module>springcloud-order-feign-19002</module>
         <module>springcloud-order-hystrix-19003</module>
+        <module>springcloud-hystrixdashboard-19005</module>
     </modules>
     <!--spring boot 项目申明-->
     <parent>
