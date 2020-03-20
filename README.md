@@ -15,4 +15,7 @@
 #### 03-注册中心
 
  [https://github.com/heylaopao/springcloud/blob/master/03-%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83.md](https://github.com/heylaopao/springcloud/blob/master/03-注册中心.md) 
+ 
+ #### 03-配置中心
+ https://github.com/heylaopao/springcloud/blob/master/04-%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83.md
 
