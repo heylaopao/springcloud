@@ -24,4 +24,7 @@
  
  #### 06-监控中心
  https://github.com/heylaopao/springcloud/blob/master/06-%E7%9B%91%E6%8E%A7%E4%B8%AD%E5%BF%83.md
+ 
+ #### 07-负载均衡
+ https://github.com/heylaopao/springcloud/blob/master/07-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1.md
 
